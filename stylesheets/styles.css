@@ -60,6 +60,7 @@ body {
   font: 20px/1.5 "Open Sans","Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#808083;
   font-weight:400;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -82,6 +83,7 @@ font-weight: 300;
 font-size: 59px;
 color: #FFFFFF;
 line-height: 80px;
+margin-left: -5px;
 }
 
 h2 {
@@ -91,6 +93,7 @@ font-size: 16px;
 color: #169483;
 letter-spacing: 30px;
 line-height: 22px;
+margin-left: 73px;
 }
 
 h3, h4, h5, h6 {
@@ -99,12 +102,12 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#39c;
+  color:#22E1C6;
   text-decoration:none;
 }
 
 a:hover {
-  color:#069;
+  color:#169483;
 }
 
 a small {
@@ -172,13 +175,15 @@ img {
 header {
     margin: 0 0 40px;
     background-color: #22E1C6;
-    height: 240px;
+    height: 256px;
   -webkit-font-smoothing:subpixel-antialiased;
-    text-align: center;
+/*    text-align: center;*/
 }
 
 header img {
     float: left;
+    margin-right: 24px;
+    margin-top: 18px;
 }
 
 header ul {
@@ -222,6 +227,13 @@ header ul a:hover {
 
 header ul a:active {
   background-color:#f0f0f0;
+}
+
+#banner {
+    width: 600px;
+    margin: 0 auto;
+    padding: 72px 0;
+    display: block;
 }
 
 strong {
@@ -268,8 +280,8 @@ footer {
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
-    width:auto;
-    margin:0;
+    width:600px;
+    margin:0 auto;
   }
 
   header, section, footer {
@@ -279,7 +291,7 @@ footer {
   }
 
   header {
-    padding-right:320px;
+/*    padding-right:320px;*/
   }
 
   section {
@@ -304,9 +316,18 @@ footer {
   body {
     word-wrap:break-word;
   }
-
+    div.wrapper {
+        width:400px;
+        margin:0 auto;
+        padding: 0 40px;
+    }
+    #banner {
+        width:400px;
+        margin:0 auto;
+/*        padding: 72px 40px; */
+    }
   header {
-    padding:0;
+    padding:0 40px;
   }
 
   header ul, header p.view {
@@ -320,7 +341,7 @@ footer {
 
 @media print, screen and (max-width: 480px) {
   body {
-    padding:15px;
+    padding:0px;
   }
 
   header ul {
